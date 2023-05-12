@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Runnel Stream</title>
+	
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+	<header>
+		<div class="roomname Enclose">
+			<h1 id ="rname"></h1>
+			<button onclick="load()"><a href="#"><i class="fas fa-sign-out-alt"></i></a></button>
+		</div>
+	</header>
+	<article>
+		<div>
+			<div class="container Enclose">
+				<div class="card">
+					<img class ="icon"src="men1.jpeg" style="width:90%">
+					<h4 id="name1"></h4>
+				</div>
+				<div class="card">
+					<img class ="icon"src="women1.jpeg" style="width:90%">
+					<h4 id="name2"></h4>
+				</div>
+				<div class="card">
+					<img class ="icon"src="women1.jpeg" style="width:90%">
+					<h4 id="name3"></h4>
+				</div>
+				<div class="card">
+					<img class ="icon"src="men1.jpeg" style="width:90%">
+					<h4 id="name4"></h4>
+				</div>
+				<div class="card">
+					<img class ="icon"src="women1.jpeg" style="width:90%">
+					<h4 id="name5"></h4>
+				</div>
+				<div class="card">
+					<img class ="icon"src="men1.jpeg" style="width:90%">
+					<h4 id="name6"></h4>
+				</div>
+				<div class="card">
+					<img class ="icon"src="women1.jpeg" style="width:90%">
+					<h4 id="name7"></h4>
+				</div>
+				<div class="card">
+					<img class ="icon"src="women1.jpeg" style="width:90%">
+					<h4 id="name8"></h4>
+				</div>
+				<div class="card">
+					<img class ="icon"src="men1.jpeg" style="width:90%">
+					<h4 id="name9"></h4>
+				</div>
+				<div class="card">
+					<img class ="icon"src="men1.jpeg" style="width:90%">
+					<h4 id="name10"></h4>
+				</div>
+			</div>
+			<div class="widget Enclose">
+				<i class="fas fa-microphone-slash"></i>
+				<i class="fas fa-video-slash"></i>
+				<i class="fas fa-comment-dots"></i>
+				<i class="fas fa-heart"></i>	
+				<i class="fas fa-street-view"></i>
+			</div><!--Menu Bar-->
+		</div>
+	</article>
+	<script type="text/javascript">
+		let roomname = document.getElementById('rname');
+		let name1 = document.getElementById('name1');
+		let name2 = document.getElementById('name2');
+		let name3 = document.getElementById('name3');
+		let name4 = document.getElementById('name4');
+		let name5 = document.getElementById('name5');
+		let name6 = document.getElementById('name6');
+		let name7 = document.getElementById('name7');
+		let name8 = document.getElementById('name8');
+		let name9 = document.getElementById('name9');
+		let name10 = document.getElementById('name10');
+
+
+		let room = [
+			"Prey",
+			"Dota",
+			"Red Dead Redemption",
+			"Stardew Valley",
+			"Forza",
+			"Apex:Legends",
+			"Hades",
+			"Outer Wilds",
+			"Alyx",
+			"Valorent"
+		];
+		let names=[
+			"Liam",
+			"Noah",
+			"Olivia",
+			"William",
+			"Henry",
+			"Raj",
+			"Priya",
+			"Amelia",
+			"Shreya",
+			"Luna",
+		]
+		let x = Math.random();
+		x = x * 10;
+		x = Math.trunc(x);
+		roomname.innerHTML = room[x];
+		name1.innerHTML = names[x];
+		name2.innerHTML = names[(x+1)%10];
+		name3.innerHTML = names[(x+2)%10];
+		name4.innerHTML = names[(x+3)%10];
+		name5.innerHTML = names[(x+4)%10];
+		name6.innerHTML = names[(x+5)%10];
+		name7.innerHTML = names[(x+6)%10];
+		name8.innerHTML = names[(x+7)%10];
+		name9.innerHTML = names[(x+8)%10];
+		name10.innerHTML = names[(x+9)%10];
+
+		function load() {
+        	setTimeout(myURL, 3000);
+         	window.alert('Leaving The Stream. Please Wait')
+      	}
+
+      function myURL() {
+         window.open('./main.html', name = self);
+      }
+	</script>
+</body>
+</html>

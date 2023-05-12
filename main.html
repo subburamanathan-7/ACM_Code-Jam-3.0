@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Runnel Cast</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+			<!-- <div class="sidepane ">
+				<i class="fa fa-bars"></i>
+			</div>sidepane toggle -->
+		<div class="title Enclose">
+			<i class="fas fa-camera"></i>
+			<h1 class="">Runnel Cast</h1>
+		</div>
+		<nav class="auth Enclose">
+			<i class="far fa-sun"></i>
+			<h2>Login</h2>
+			<h2>Signup</h2>
+		</nav>
+	</header>
+	<section>
+		<div class="leftpane Enclose">
+				<a href="#" class="Button">
+					<button onclick="load()">
+						<div class="Enclose ">
+							<i class="fas fa-plus"></i>
+							<h3>Create Stream</h3>
+						</div>
+					</button>
+				</a>
+
+				<a href="#" class="Button">
+					<button onclick="load">
+						<div class="Enclose">
+							<i class="fas fa-door-open"></i>
+							<h3>Join &nbsp; Stream</h3>
+						</div>
+					</button>
+				</a>
+		</div><!--  -->
+		<div class="rightpane Enclose">
+			<img src="meet2.jpeg">
+			<p class="content">Runnel Cast is an video live streaming service that focuses on video game live streaming, including broadcasts of esports competitions, in addition to offering music broadcasts, creative content, and "in real life" streams.</p>
+		</div>
+	</section>
+	<script type="text/javascript">
+		
+		function load() {
+        	setTimeout(myURL, 3000);
+         	window.alert('Joining The Stream. Please Wait')
+      	}
+
+      function myURL() {
+         window.open('./stream.html', name = self);
+      }
+	</script>
+</body>
+</html>
